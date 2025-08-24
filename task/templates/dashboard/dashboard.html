@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>{% block titles %}
+      
+    {% endblock titles %}</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,106 +119,10 @@
             </div>
         </div>
 
-        <!-- Task table -->
 
-        <div class="div bg-white rounded-xl shadow-sm">
-            <div class="grid grid-cols-4 p-4 border-b border-gray-200 text-sm text-gray-500">
-                <div class="">TASK TITLE</div>
-                <div class="">PRIORITY</div>
-                <div class="">TEAM</div>
-                <div class="">CREATED AT</div>
-            </div>
-
-            <!-- Task item -->
-
-            <div class="divide-y divide-gray-200">
-                <!-- task 1 -->
-                <div class="grid grid-cols-4 gap-4 p-4 items-center">
-                    <div class="flex items-center gap-2">
-                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
-                        <div><span>Text Low Task</span></div>
-                    </div>
-                    <div>
-                        <span class="px-3 py-1 bg-blue-50 rounded-full text-blue-600 text-sm">Low</span>
-                    </div>
-                    <div class="flex -space-x-2">
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            CA
-                        </div>
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            CA
-                        </div>
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            CA
-                        </div>
-                    </div>
-                    <div>
-                        <span class="text-gray-500">9 months ago</span>
-                    </div>
-                </div>
-                <!-- task 2 -->
-                <div class="grid grid-cols-4 gap-4 p-4 items-center">
-                    <div class="flex items-center gap-2">
-                        <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                        <div><span>Text Task</span></div>
-                    </div>
-                    <div>
-                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-600 text-sm">Normal</span>
-                    </div>
-                    <div class="flex -space-x-2">
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            AJ
-                        </div>
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            EV
-                        </div>
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            B
-                        </div>
-                    </div>
-                    <div>
-                        <span class="text-gray-500">9 months ago</span>
-                    </div>
-                </div>
-                <!-- task 3 -->
-                <div class="grid grid-cols-4 gap-4 p-4 items-center">
-                    <div class="flex items-center gap-2">
-                        <div class="w-2 h-2 bg-red-500 rounded-full"></div>
-                        <div><span>Text Task</span></div>
-                    </div>
-                    <div>
-                        <span class="px-3 py-1 bg-red-50 rounded-full text-red-600 text-sm">High</span>
-                    </div>
-                    <div class="flex -space-x-2">
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            CA
-                        </div>
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            JS
-                        </div>
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            AJ
-                        </div>
-                        <div
-                            class="w-8 h-8 rounded-full bg-blue-500 text-sm text-white flex justify-center items-center border-2 border-white">
-                            B
-                        </div>
-                    </div>
-                    <div>
-                        <span class="text-gray-500">10 months ago</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% block tasks %}
+          
+        {% endblock tasks %}
 
     </main>
 </body>

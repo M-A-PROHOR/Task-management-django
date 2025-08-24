@@ -1,0 +1,164 @@
+{% extends "dashboard/dashboard.html" %}
+{% block titles %}
+User Dashboard
+{% endblock titles %}
+
+{% block tasks %}
+  
+
+<!-- task  -->
+<div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mt-6">
+    <!-- 1 -->
+    <div class="bg-white p-4 rounded-lg shadow-md mt-6">
+        <div>
+            <p class="text-2xl font-bold mb-4">Today's Tasks</p>
+        </div>
+        <!-- down 1 -->
+        <div class="flex justify-between items-center mb-4">
+            <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-green-500 rounded-full mb-1"></div>
+                <div>
+                    <p class="text-sm font-semibold mb-2">completed Project proposal</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-sm text-gray-500 mb-2">High</p>
+            </div>
+        </div>
+        <!-- down 2 -->
+        <div class="flex justify-between items-center mb-4">
+            <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-yellow-500 rounded-full mb-1"></div>
+                <div>
+                    <p class="text-sm font-semibold mb-2">Review team updates</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-sm text-gray-500 mb-2">Normal</p>
+            </div>
+        </div>
+        <!-- down 3 -->
+        <div class="flex justify-between items-center mb-4">
+            <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-blue-500 rounded-full mb-1"></div>
+                <div>
+                    <p class="text-sm font-semibold mb-2">Prepare for client meeting</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-sm text-gray-500 mb-2">Low</p>
+            </div>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="bg-white p-4 rounded-lg shadow-md mt-6">
+        <div class="mb-4">
+            <span class="text-2xl font-bold">All Task</span>
+        </div>
+        <div class="grid grid-cols-4 gap-10 mb-2">
+            <div class="mb-2 font-semibold text-gray-500">TASK TITLE</div>
+            <div class="mb-2 font-semibold text-gray-500">PRIORITY</div>
+            <div class="mb-2 font-semibold text-gray-500">TEAM</div>
+            <div class="mb-2 font-semibold text-gray-500">CREATED AT</div>
+        </div>
+
+        <!-- title down -->
+        <!-- 1 -->
+        <div class="grid grid-cols-4 gap-10 mb-2">
+            <!-- 1 -->
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="w-2 h-2 bg-green-500 rounded-full mt-1"></div>
+                    <p class="text-sm font-semibold">Test Low Task</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div>
+                <span
+                    class="px-3 py-1 rounded-md text-center text-sm font-semibold text-blue-500 bg-blue-200">Low</span>
+            </div>
+            <!-- 3 -->
+            <div class="flex">
+                <div
+                    class="-ms-1 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-blue-500">
+                    CA</div>
+                <div
+                    class="-ms-3 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-green-500">
+                    JS</div>
+                <div
+                    class="-ms-3 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-yellow-500">
+                    B</div>
+            </div>
+            <!-- 4 -->
+            <div>
+                <div class="text-gray-500">9 Months ago</div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="grid grid-cols-4 gap-10 mb-2">
+            <!-- 1 -->
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="w-2 h-2 bg-yellow-500 rounded-full mt-1"></div>
+                    <p class="text-sm font-semibold">Test Task</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div>
+                <span
+                    class="px-3 py-1 rounded-md text-center text-sm font-semibold text-yellow-500 bg-yellow-200">Normal</span>
+            </div>
+            <!-- 3 -->
+            <div class="flex">
+                <div
+                    class="-ms-1 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-orange-500">
+                    AJ</div>
+                <div
+                    class="-ms-3 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-violet-500">
+                    EV</div>
+                <div
+                    class="-ms-3 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-yellow-500">
+                    B</div>
+            </div>
+            <!-- 4 -->
+            <div>
+                <div class="text-gray-500">4 Months ago</div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="grid grid-cols-4 gap-10 mb-2">
+            <!-- 1 -->
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="w-2 h-2 bg-red-500 rounded-full mt-1"></div>
+                    <p class="text-sm font-semibold">Test Code</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div>
+                <span class="px-3 py-1 rounded-md text-center text-sm font-semibold text-red-500 bg-red-200">High</span>
+            </div>
+            <!-- 3 -->
+            <div class="flex">
+                <div
+                    class="-ms-1 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-blue-500">
+                    CA</div>
+                <div
+                    class="-ms-3 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-green-500">
+                    JS</div>
+                <div
+                    class="-ms-3 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-red-500">
+                    AS</div>
+                <div
+                    class="-ms-3 w-8 h-8 text-center flex justify-center items-center rounded-full text-white bg-yellow-500">
+                    B</div>
+            </div>
+            <!-- 4 -->
+            <div>
+                <div class="text-gray-500">6 Months ago</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock tasks %}
